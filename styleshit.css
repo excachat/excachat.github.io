@@ -37,6 +37,7 @@ input
     font-size: 150%;
     border: solid rgba(96, 96, 192, 0.2);
     border-radius: 1.2vmin;
+    transition: all 0.3s;
 }
 
 .MessageInput
