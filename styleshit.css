@@ -341,3 +341,8 @@ input
     content: "[OK!] ";
 }
 
+input:disabled
+{
+    cursor: not-allowed;
+    background-color: #1b1b1e;
+}
