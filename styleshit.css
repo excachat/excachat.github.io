@@ -1,0 +1,343 @@
+html, body
+{
+    color: white;
+    background-color: #101018;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+*
+{
+    color: white;
+    background-color: #101018;
+}
+div
+{
+    padding: 0;
+    margin: 0;
+}
+
+.bordered {
+/*     border: solid rgba(72, 61, 139, 1); */
+    border-radius: 1.5vmin;
+    padding: 0;
+    margin: 0;
+}
+
+.centered {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+input
+{
+    margin: 0.1% 0%;
+    font-family: Arial;
+    font-size: 150%;
+    border: solid rgba(96, 96, 192, 0.2);
+    border-radius: 1.2vmin;
+}
+
+.MessageInput
+{
+    width: 100%;
+    height: 15%;
+    padding: 0em 1em;
+}
+
+.RInput
+{
+    text-align: center;
+    width: 20%;
+    overflow: auto;
+    height: 15%;
+/*     float: right; */
+    font-family: monospace;
+}
+
+
+.CButton
+{
+    margin: 0.5%;
+    font-size: 1em;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.3s;
+    height: 10%;
+    float: left;
+    background-color: #111423;
+    border-radius: 1.2vmin;
+    border: none;
+}
+
+.CButton:hover
+{
+    background-color: #0d0e19;
+}
+
+.CButton:active
+{
+    background-color: #08080f;
+}
+
+.CButton:disabled
+{
+    cursor: not-allowed;
+    background-color: #1b1b1e;
+}
+
+
+.CSelectDiv
+{
+    width: 20%;
+    height: 10%;
+    border: solid rgba(96, 96, 192, 0.2);
+    border-radius: 1.2vmin;
+    box-sizing: border-box;
+}
+
+.CSelectDiv select
+{
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    font-size: 1em;
+    background-color: #101018;
+    word-break: normal;
+    border: 5px hidden;
+    border-radius: 1.2vmin;
+}
+
+
+.CSelectDiv select:disabled
+{
+    cursor: not-allowed;
+    background-color: #171721;
+}
+
+
+.Log
+{
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    border: solid rgba(96, 96, 192, 0.2);
+    padding: 1%;
+    border-radius: 1.2vmin;
+}
+
+
+#Log::-webkit-scrollbar
+{
+    display: none;
+}
+
+
+#messages {
+    width: auto;
+    overflow: auto;
+    border: solid rgba(96, 96, 192, 0.2);
+    padding: 1%;
+    border-radius: 1.5vmin;
+    position: relative;
+}
+
+#messages::-webkit-scrollbar
+{
+    display: none;
+}
+
+#messagebox {
+    height: 96%;
+    width: auto;
+    overflow: auto;
+    border: solid rgba(72, 61, 139, 1);
+    background: #101018;
+    padding: 0.5% 0.5%;
+    border-radius: 1.5vmin;
+    position: relative;
+}
+
+
+.DataDisplay
+{
+    white-space: pre;
+    font-family: monospace;
+    font-size: 1.5em;
+}
+
+
+.ChannelDisplay
+{
+
+}
+
+.NicknameDisplay
+{
+    overflow: hidden;
+}
+
+.ChannelDisplay::before
+{
+    content: "Channel:  ";
+}
+
+
+.NicknameDisplay::before
+{
+    content: "Nickname: ";
+}
+
+
+.ChatMessage
+{
+    font-family: Arial;
+    font-size: 100%;
+}
+
+
+
+.white
+{
+    color: white;
+}
+
+
+.black
+{
+    color: black;
+}
+
+.dark_blue
+{
+    color: #0000aa;
+}
+
+.dark_green
+{
+    color: #00aa00;
+}
+
+.dark_aqua
+{
+    color: #00aaaa;
+}
+
+.dark_red
+{
+    color: #aa0000;
+}
+
+.dark_purple
+{
+    color: #aa00aa;
+}
+
+.gold
+{
+    color: #ffaa00;
+}
+
+.gray
+{
+    color: #aaaaaa;
+}
+
+.dark_gray
+{
+    color: #555555;
+}
+
+.blue
+{
+    color: #5555ff;
+}
+
+
+.green
+{
+    color: #55ff55;
+}
+
+.aqua
+{
+    color: #55ffff;
+}
+
+.red
+{
+    color: #ff5555;
+}
+
+.pink
+{
+    color: #ff55ff;
+}
+
+.yellow
+{
+    color: #ffff55;
+}
+
+.bold
+{
+    font-weight: bold;
+}
+
+
+.italic
+{
+    font-style: italic;
+}
+
+.underlined
+{
+    text-decoration: underline;
+}
+
+.strikethrough
+{
+    text-decoration: line-through;
+}
+
+
+.LoggedError
+{
+    font-family: monospace;
+    font-size: 100%;
+    color: #fc202f;
+}
+
+.LoggedSuccess
+{
+    font-family: monospace;
+    font-size: 100%;
+    color: #04e813;
+}
+
+
+.LoggedData
+{
+    font-family: monospace;
+    font-size: 100%;
+    color: #d39802;
+}
+
+.LoggedError::before
+{
+    content: "[ERR] ";
+}
+
+
+.LoggedData::before
+{
+    content: "[LOG] ";
+}
+
+
+.LoggedSuccess::before
+{
+    content: "[OK!] ";
+}
+

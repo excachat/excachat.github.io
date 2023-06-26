@@ -1,0 +1,43 @@
+<link href="styleshit.css" rel="stylesheet">
+<div style="height:96%; width:98%; padding: 0.5%;" class="bordered messagebox">
+<div style="height:55%; margin-top: 0.5%" class="bordered centered" id="messages"></div>
+<input type=text placeholder='Enter message (messages can be separated with ";")' class="MessageInput" id="msg_inp"></input>
+<div style="height:24%; width:40%; float:left" class="bordered">
+<button class="CButton" id="btn_connect" style="width: 32.3%; height: 50%">Connect</button>
+<button class="CButton" id="btn_stop" style="width: 32.3%; height: 50%">Stop</button>
+<button class="CButton" id="btn_autosend" style="width: 32.3%; height: 50%">Send message every 5.5 seconds</button>
+<div class="CSelectDiv" style="float: left; height: 50%; width: 100%;">
+<select id="ServerSelect">
+<option value="88.99.88.222:25565;1.7.10">Magic (1.7.10)</option>
+<option value="78.46.76.151:25566;1.7.10">RPG (1.7.10)</option>
+<option value="78.46.76.151:25577;1.12.2">Pixelmon (1.12.2)</option>
+<option value="78.46.76.151:25871;1.12.2">Wizardry (1.12.2)</option>
+<option value="116.202.199.193:25081;1.12.2">TechnoMagicEvo (1.12.2)</option>
+<option value="116.202.199.193:25572;1.7.10 selected">TechnoMagic (1.7.10)</option>
+<option value="116.202.199.193:25566;1.7.10">Industrial S1 (1.7.10)</option>
+<option value="116.202.199.193:25568;1.7.10">Industrial S2 (1.7.10)</option>
+<option value="78.46.76.151:25771;1.12.2">SkyFactory (1.12.2)</option>
+<option value="78.46.76.151:25781;1.12.2">OneBlock (1.12.2)</option>
+<option value="78.46.76.151:25920;1.12.2">GalaxyTech (1.12.2)</option>
+</select>
+</div>
+</div>
+<div style="height:22.4%; width:38.9%; float:left" class="bordered">
+<div class="Log" id="Log">
+</div>
+</div>
+<div style="height:25%; width:20%; float:right" class="bordered">
+<input type=text placeholder='Nickname' class="RInput" id="nck_inp" maxlength=16, style="height: 50%; width:100%">
+<input type=text placeholder='Password' class="RInput" id="pwd_inp" maxlength=1024, style="height: 50%; width:100%">
+</div>
+</div>
+<script src="/lib/pako.js"></script>
+<script src="/lib/jsaes.js"></script>
+<script src="/lib/jquery.js"></script>
+<script src="/lib/forge.js"></script>
+<script src="/lib/base64.js"></script>
+<script src="/lib/symmetric.js"></script>
+
+
+<script src="src.js"></script>
+
